@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="color-scheme" content="light">
+        <meta name="robots" content="index, follow">
+        <meta property="og:type" content="wesbite">
+        <meta property="og:title" content="RijnMUN 2024">
+        <meta property="og:url" content="https://www.rijnmun.org/">
+        <meta property="og:site_name" content="RijnMUN">
+        <meta name="theme-color" content="#23569090">
+        <meta name="description" content="Archived website of RijnMUN 2024">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="icon" href="/images/favicon.ico" sizes="96x96">
+
+        <!-- preloading the fonts ---- -->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" as="style">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+
+        <link rel="stylesheet" type="text/css" href="/styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="/styles/base.css">
+        <link rel="stylesheet" type="text/css" href="/styles/mobile.css" media="screen and (max-width: 767px)">
+        <link rel="stylesheet" type="text/css" href="/styles/edition_index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="/scripts/base.js"></script>
+        <!-- <script src="/scripts/index.js"></script>  -->
+        <title>RijnMUN 2024</title>
+        
+    </head>
+    <body>
+        <header data-nosnippet>
+            <div class="logo_container">
+                <a href="/"><img alt="RijnMUN Logo" class="logo" id="logo" src="/images/logos/logo.webp"></a>
+            </div>
+
+            <!-- dropdown for laptop version -->
+            <div class="menu" id="menu">
+                <a href="/" class="current">Home</a>
+                <div class="normal">
+                    <div class="dropdown">
+                        <a id="dropbtn" class="dropbtn" href="/rijnmun-2024/general-information">Past Editions</a>
+                        <div class="dropdown-content">
+                            <a href="/2024/">RijnMUN 2024</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="normal" href="/registration">Photos</a>
+                <a class="normal" href="/contact">Uploads</a>
+                <p class="icon" onclick="show_bars()" style="height: 30px;">
+                        <span id="bar1" class="bar" style="--i:0"></span>
+                        <span id="bar2" class="bar" style="--i:9"></span>
+                        <span id="bar3" class="bar" style="--i:18"></span>
+                </p>
+            </div>
+        </header>  
+        <!-- dropdown for phone version -->
+        <div class="toggle" id="toggle" style="display:none;">
+            <ul>
+                <li class="main"><a href="/">Home</a></li>
+                <li class="main"><a href="/rijnmun-2024/general-information">Past Editions</a></li>
+                <ul><li>
+                    <a href="/rijnmun-2024/general-information">RijnMUN 2024</a>
+                </li></ul>
+                <li class="main"><a href="/registration">Photos</a></li>
+                
+                <li class="main"><a href="/contact">Uploads</a></li>
+            </ul>
+        </div>
+        <noscript><div id="js_alert">
+            <h2>JavaScript Disabled</h2>
+            <p>Please allow JavaScript for this website as it is needed for many of the core functionalities of this website. You can change website permissions in your browser settings, and then reload the page.</p>
+        </div></noscript>
+        <main onclick="hide_bars()">
+            <div class="title">
+                <h1>Rijnlands Lyceum Oegstgeest<br>Model United Nations 2024</h1>
+                <h2>11<sup>th</sup> to 13<sup>th</sup> October 2024</h2>
+            </div>
+            <div class="container">
+
+                <div class="message" data-nosnippet>
+                    <p>
+                        <span class="keywords">Dear MUN directors, advisors, delegates, student officers, admins, and guests,</span> <br>
+                        <br>
+                        On behalf of the RijnMUN 2024 Board of Directors, welcome to the archive of RijnMUN 2024.
+                        <br>
+                        The inaugural RijnMUN 2024 conference was a massive success, with 170 delegates and over 60 volunteers supporting the conference. We thank everyone who was present and made it possible.
+                        <br>
+                        Below, you will find a record of the first ever RijnMUN.
+                    </p>
+                </div>
+
+                <div class="section bod">
+                    <h2>Board of Directors</h2>
+                    <p>ADD BOD GROUP IMAGE</p>
+                    <p>
+                        <span class="role">Secretary General</span>: <span class="name">Julie Lodereau</span>
+                        <br>
+                        <span class="role">Deputy Secretary Genearals</span>: <span class="name">Alan Gil Forza, Emily Hanlon, Beatriz Soares, Hannelore Coppens, Lenka Huang</span>
+                        <br>
+                        <span class="role">Communications</span>: <span class="name">Alexander Graham, Ruby O'Regan, Kiran van Brandenburg, Lenka Huang</span>
+                        <br>
+
+                        ...and so forth
+
+                    </p>
+                </div>
+                
+                <div class="section cai">
+                    <h2>Committees & Issues</h2>
+                    <p>PER COMMITTEE: stoff, issues (research report?), passed resos </p>
+                </div>
+
+                <div class="section gsaa">
+                    <h2>Special Thanks</h2>
+                    <p>List guest speaker with committee + title, list of advisors</p>
+                </div>
+
+                <div class="section photos">
+                    <h2>Photos!</h2>
+                    <p>RijnMUN 2024 photos can be accessed and downloaded here{link to photos page}</p>
+                </div>
+
+                <div class="section statistics">
+                    <h2>RijnMUN 2024 in numbers...</h2>
+                    <p>Number of BoD, number of admins, number of schools, number of delegates, numbers of resos sent...etc</p>
+                </div>
+
+            </div>
+            <div id="scrollup">
+                <i class="fa fa-arrow-up fa-2x"></i>
+            </div>
+            <div class="rcmenu" id="rcmenu">
+                <div class="funcs" id="funcs">
+                    <p onclick="window.location.reload()">Reload</p>
+                </div>
+                <div class="links" id="links">
+                    <p onclick="window.location.replace('https:\/\/www.rijnmun.org\/')">Home</p>
+                    <p onclick="window.location.replace('https:\/\/www.rijnmun.org\/rijnmun-2024\/programme-of-events')">Agenda</p>
+                    <p onclick="window.location.replace('https:\/\/www.rijnmun.org\/rijnmun-2024\/committees-and-issues')">Committees</p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

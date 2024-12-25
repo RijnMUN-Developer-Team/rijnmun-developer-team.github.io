@@ -348,7 +348,7 @@ const footerHTML = `
                         </ul>
                     </div>
                     <div class="timer">
-                        <h4 title="Oh the pain that has gone into creating this countdown-">COUNTDOWN TO RIJNMUN</h4>
+                        <h4 title="Oh the pain that has gone into creating this countdown-">COUNTUP FROM FIRST RIJNMUN</h4>
                         <div class="countdown">
                             <table class="tm_tbl">
                                 <tr><td id="days"><div class="days_div"><p id="day1"></p><p id="day2"></p><p id="day3"></p></div></td><td id="hours"><div class="hours_div"><p id="hr1"></p><p id="hr2"></p></div></td><td id="minutes"><div class="mins_div"><p id="min1"></p><p id="min2"></p></div></td><td id="seconds"><div class="secs_div"><p id="sec1"></p><p id="sec2"></p></div></td></tr>

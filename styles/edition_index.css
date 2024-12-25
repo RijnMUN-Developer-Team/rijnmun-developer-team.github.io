@@ -1,0 +1,126 @@
+:root {
+    --theme-bl: #235690;
+    --theme-rd: #D90148;
+    --theme-wh: white;
+    --bl-txt: #0269B3;
+
+    --mid-bl: #5B95D7;
+    --light-bl: #cedff3;
+    --dark-bl: #143152;
+    --news-text: #1C4473;
+
+    --h3-color: #ade1f2f2;
+}
+
+h1 {
+    line-height: 1.25em;
+}
+
+.title h2 {
+    width: 98%;
+    font-size: 30px;
+    text-align: end;
+    justify-self: end;
+    color: var(--h3-color);
+    margin: 1%;
+}
+
+.container {
+    padding: 5% 3% 5% 2%; /* don't touch this / made to align with .title */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+/* welcome letter  */
+.message {
+    width: 90vw;
+    display: block;
+    justify-content: center;
+}
+
+.message p {
+    margin-top: unset;
+    color: var(--bl-txt);
+    font-size: 18px;
+    text-align: center;
+    /* font-weight: 500; */
+    line-height: 32px;
+
+    /* for open sans ----  */
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.keywords {
+    /* font-weight: 800; */
+    margin-top: unset;
+
+    /* for open sans------  */
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* sections ---- */
+.section {
+    margin: 2.5%; /* don't touch this / made to align with .title */
+}
+.section h2 {
+    text-align: left;
+    color: var(--theme-bl);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* Mobile support */
+
+@media screen and (max-width: 767px) {
+    .welcome {
+        display: block;
+        flex-direction: unset;
+        padding: 1.5%;
+        width: fit-content;
+    }
+
+    .message {
+        width: 90%;
+        margin-left: 5vw;
+    }
+
+    .message p {
+        font-size: 15px;
+        /* font-weight: 600; don't override default font design settings*/
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    h1 {
+        width: unset;
+        padding: 5%;
+        padding-left: 2%;
+        padding-bottom: none;
+        /* font-size: 50px; why does mobile have larger titles than laptop?? 50px is kinda too big for a phone i think*/
+    }    
+
+    h2 {
+        width: 85%;
+        padding-left: 5%;
+        padding-bottom: 3%;
+        /* padding-right: unset; */
+        margin: 1px;
+        font-size: 25px;
+    }
+
+    .f_contact {
+        margin-right: none;
+        padding-right: none;
+    }
+
+    ul.f_contact {
+        margin: unset;
+        padding: unset;
+    }
+}
