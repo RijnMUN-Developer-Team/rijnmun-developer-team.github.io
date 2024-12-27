@@ -62,14 +62,62 @@ h1 {
 }
 
 /* sections ---- */
-.section {
-    margin: 2.5%; /* don't touch this / made to align with .title */
-}
-.section h2 {
+
+h2.section {
     text-align: left;
     color: var(--theme-bl);
     font-size: 30px;
-    margin-bottom: 15px;
+    margin-bottom: unset;
+}
+
+.section {
+    margin: 2.5%; /* don't touch this / made to align with .title */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.section.bod {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+/* bod section ---------- */
+.section.bod img {
+    width: calc(55% - 10px);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.section.bod p {
+    width: calc(40% - 10px);
+    margin: 5px;
+    color: var(--dark-bl);
+    line-height: 1.5em;
+}
+
+/* role and name design for both bod and gsaa sections ------- */
+.section p .role {
+    font-weight: bold;
+    line-height: 1.7em;
+}
+
+.section p .name {
+    font-style: italic;
+}
+
+/* gsaa section css ---  */
+.section h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: var(--bl-txt);
+}
+
+.section.gsaa p {
+    line-height: 1.5em;
+    margin-bottom: 10px;
 }
 
 /* Mobile support */
@@ -112,6 +160,15 @@ h1 {
         /* padding-right: unset; */
         margin: 1px;
         font-size: 25px;
+    }
+
+    .section.bod {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section.bod img, .section.bod p {
+        width: 95%;
     }
 
     .f_contact {
