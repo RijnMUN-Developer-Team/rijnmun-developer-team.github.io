@@ -304,19 +304,10 @@ const footerHTML = `
                         <h4>GENERAL</h4>
                         <ul class="f_important">
                             <li>
-                                <a href="/rijnmun-2024/programme-of-events">Agenda</a>
+                                <a href="/">Archive Home</a>
                             </li>
                             <li>
-                                <a href="/uploads/RijnMUN_Delegate_Handbook.pdf" target="_blank" rel="noopener noreferrer">Handbook</a>
-                            </li>
-                            <li>
-                                <a href="/rijnmun-2024/general-information?tab=resources">Resources</a>
-                            </li>
-                            <li>
-                                <a href="/uploads/RijnMUN Privacy Policy.pdf">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="/uploads/RijnMUN 2024 Resolution Template.odt" target="_blank" rel="noopener noreferrer">Resolution Template</a>
+                                <a href="/" target="_blank" rel="noopener noreferrer">Photos</a>
                             </li>
                         </ul>
                     </div>

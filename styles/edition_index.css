@@ -61,13 +61,14 @@ h1 {
     font-style: italic;
 }
 
-/* sections ---- */
+/* SECTIONS GENERAL DESIGN ---- */
 
 h2.section {
     text-align: left;
     color: var(--theme-bl);
     font-size: 30px;
     margin-bottom: unset;
+    width: calc(100% - 5%);
 }
 
 .section {
@@ -98,7 +99,7 @@ h2.section {
     line-height: 1.5em;
 }
 
-/* role and name design for both bod and gsaa sections ------- */
+/* role and name design for both BOD AND GSAA ------- */
 .section p .role {
     font-weight: bold;
     line-height: 1.7em;
@@ -119,6 +120,46 @@ h2.section {
     line-height: 1.5em;
     margin-bottom: 10px;
 }
+
+/* COMMITTEES AND ISSUES SECTION -------- */
+.section.cai .per-committee {
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+/* committee name titles  */
+.section.cai h3 {
+    padding-left: 15px; /* align with h4 and tale */
+    border-left: 5px solid var(--theme-rd);
+}
+
+/* stoff names */
+.section.cai h4 {
+    font-weight: lighter;
+    font-size: 14px;
+    color: var(--dark-bl);
+    margin-top: 3px;
+    letter-spacing: 0.5px;
+
+    padding-left: 20px; /* align with h3 + h3 border and table */
+    margin-bottom: 10px;
+}
+
+.section.cai .issues table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px 5px; /* ensure first value aligns with h4 */
+    color: var(--dark-bl);
+}
+
+.section.cai .issues table .issue-num {
+    width: 50px
+}
+
+.section.cai .issues table .issue-name {
+    width: calc(100% - 100px);
+}
+
 
 /* Mobile support */
 
@@ -153,9 +194,9 @@ h2.section {
         /* font-size: 50px; why does mobile have larger titles than laptop?? 50px is kinda too big for a phone i think*/
     }    
 
-    h2 {
-        width: 85%;
-        padding-left: 5%;
+    h2, h2.section {
+        width: calc(100% - 5%);
+        padding-left: 2%;
         padding-bottom: 3%;
         /* padding-right: unset; */
         margin: 1px;
