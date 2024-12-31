@@ -241,7 +241,7 @@ h2.section {
         /* font-size: 50px; why does mobile have larger titles than laptop?? 50px is kinda too big for a phone i think*/
     }    
 
-    h2, h2.section {
+    h2, h2.section, .section h3 {
         width: calc(100% - 5%);
         padding-left: 2%;
         padding-bottom: 3%;
@@ -250,13 +250,59 @@ h2.section {
         font-size: 25px;
     }
 
+    h2.section {
+        margin-top: 15px;
+    }
+
     .section.bod {
         display: flex;
         flex-direction: column;
+        width: 95%;
     }
 
     .section.bod img, .section.bod p {
         width: 95%;
+    }
+
+    .section.cai h3, .section.cai h4 {
+        width: calc(100% - 20px);
+    }
+
+    /* gsaa -------  */
+
+    /* .section.gsaa {
+        width: 95%;
+    } */
+
+    .section.gsaa p {
+        width: 93%;
+        padding-left: 2%;
+    }
+
+    .section.gsaa .speakers {
+        overflow-x: scroll;
+        width: 95%;
+    }
+
+    .section.gsaa .speakers table {
+        border: none;
+        padding-left: unset;
+        width: 100px;
+
+        /* overflow: hidden; */
+    }
+
+    .section.gsaa .speakers tr {
+        width: 100%;
+    }
+
+    .section.gsaa .speakers .title {
+        overflow: hidden;
+    }
+
+    /* stats ----  */
+    .section.statistics ul {
+        width: calc(95% - 20px);
     }
 
     .f_contact {
