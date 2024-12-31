@@ -72,7 +72,7 @@ h2.section {
 }
 
 .section {
-    margin: 2.5%; /* don't touch this / made to align with .title */
+    margin: 1.5% 2.5%; /* don't touch this / made to align with .title */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -83,6 +83,14 @@ h2.section {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+}
+
+.section a {
+    color: var(--theme-rd);
+}
+
+.section a:hover {
+    color: var(--theme-bl);
 }
 
 /* bod section ---------- */
@@ -160,6 +168,45 @@ h2.section {
     width: calc(100% - 100px);
 }
 
+/* gsaa section -----  */
+.section.gsaa .speakers table {
+    width: calc(100% - 20px);
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+
+    padding-left: 15px;
+    border-left: 5px solid var(--theme-bl);
+}
+
+.section.gsaa .speakers td {
+    line-height: 1.2em;
+}
+
+.section.gsaa .speakers td.committee {
+    font-weight: bold;
+    color: var(--news-text);
+}
+
+.section.gsaa .speakers td.speaker-name {
+    font-style: italic;
+}
+.section.gsaa .speakers td.title {
+    background-color: unset;
+}
+
+/* stats section -----  */
+.section.statistics {
+    padding-left: 20px;
+}
+
+.section.statistics ul {
+    line-height: 140%;
+    color: var(--dark-bl);
+}
+
+.section.statistics .stats-name {
+    font-weight: 600;
+}
 
 /* Mobile support */
 
